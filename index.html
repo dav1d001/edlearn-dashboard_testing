@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Educational Dashboard</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+</head>
+<body>
+    <header>
+        <div class="header-content">
+            <h2>EDLEARN</h2>
+            <p>Customized Learning, Limitless Potential</p>
+        </div>
+        <div class="user-info">
+            <img src="path/to/profile.jpg" alt="Profile Picture" class="profile-pic">
+            <span>Amina Mwangi</span>
+            <button>Logout</button>
+        </div>
+    </header>
+
+    <div class="container">
+        <nav class="vertical-nav">
+            <ul>
+                <li><a href="#"><i class="fas fa-tachometer-alt"></i> Dashboard</a></li>
+                <li><a href="#"><i class="fas fa-book"></i> Curriculum</a></li>
+                <li><a href="#"><i class="fas fa-graduation-cap"></i> Courses</a></li>
+                <li><a href="#"><i class="fas fa-folder-open"></i> Resources</a></li>
+                <li><a href="#"><i class="fas fa-newspaper"></i> News & Updates</a></li>
+                <li><a href="#"><i class="fas fa-cog"></i> Settings</a></li>
+                <li><a href="#"><i class="fas fa-envelope"></i> Contact Us</a></li>
+                <li><a href="#"><i class="fas fa-user"></i> Profile</a></li>
+                <li><a href="#"><i class="fas fa-sign-out-alt"></i> Logout</a></li>
+            </ul>
+        </nav>
+
+        <main>
+            <section class="search">
+                <h2>Search</h2>
+                <form action="/search" method="GET">
+                    <input type="text" name="query" placeholder="Search...">
+                    <button type="submit"><i class="fas fa-search"></i></button>
+                </form>
+            </section>
+
+            <section class="performance">
+                <h2>Performance per week</h2>
+                <!-- Performance chart or data goes here -->
+            </section>
+
+            <div class="container">
+                <h2>Assignments</h2>
+                <div class="assignment">
+                    <div class="details">
+                        <p class="title"><strong>African studies</strong></p>
+                        <strong>African History & Civilization</strong><br>
+                        Due: July 18th, Mr. Azuma
+                    </div>
+                    <div class="status">In progress</div>
+                    <div class="view-details">View details</div>
+                </div>
+                <div class="assignment">
+                    <div class="details">
+                        <p class="title"><strong>Mathematics</strong></p>
+                        <strong>Basic Algebra</strong><br>
+                        Due: July 20th, Mr. Ocheng
+                    </div>
+                    <div class="status">In progress</div>
+                    <div class="view-details">View details</div>
+                </div>
+                <div class="assignment">
+                    <div class="details">
+                        <p class="title"><strong>English</strong></p>
+                        <strong>African Literature</strong><br>
+                        Due: July 15th, Ms. Okpaise
+                    </div>
+                    <div class="status">In progress</div>
+                    <div class="view-details">View details</div>
+                </div>
+                <div class="assignment">
+                    <div class="details">
+                        <p class="title"><strong>N.R.M</strong></p>
+                        <strong>Sustainable Agriculture</strong><br>
+                        Due: July 15th, Mr. Yapama
+                    </div> 
+                    <div class="status">In progress</div>
+                    <div class="view-details">View details</div>
+                </div>      
+            <aside class="calendar-events">
+                <section class="calendar">
+                    <h2>Calendar</h2>
+                    <p>4 items scheduled</p>
+                    <!-- Calendar events go here -->
+                </section>
+
+                <section class="events">
+                    <h2>Upcoming Events</h2>
+                    <p>There are no events at the moment.</p>
+                </section>
+            </aside>
+        </main>
+    </div>
+
+    <footer>
+        <p>&copy; 2024 Educational Dashboard</p>
+    </footer>
+</body>
+</html>
