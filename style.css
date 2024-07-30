@@ -1,0 +1,222 @@
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f4;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+}
+
+header {
+    background-color: #4CAF50;
+    color: white;
+    padding: 10px 20px;
+    display: flex;
+    align-items: center;
+    position: fixed; /* Fix the header at the top */
+    width: calc(100% - 200px); /* Adjust for sidebar width */
+    top: 0;
+    left: 200px; /* Match the sidebar width */
+    z-index: 1000; /* Ensure header is above other content */
+}
+
+.header-content {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+}
+
+.header-content h2 {
+    margin: 0;
+    font-size: 24px; /* Size for "EDLEARN" */
+}
+
+.header-content p {
+    margin: 0;
+    font-size: 14px; /* Smaller size for "Customized Learning, Limitless Potential" */
+    color: #e0e0e0; /* Optional: Adjust color for better contrast */
+}
+
+.user-info {
+    display: flex;
+    align-items: center;
+    margin-left: auto;
+}
+
+.user-info img.profile-pic {
+    border-radius: 50%;
+    width: 40px;
+    height: 40px;
+    margin-right: 10px;
+}
+
+.user-info span {
+    margin-right: 10px;
+}
+
+nav.vertical-nav {
+    background-color: #333;
+    width: 200px;
+    min-height: 100vh;
+    position: fixed; /* Fix the sidebar */
+    top: 60px; /* Adjust based on header height */
+    left: 0;
+    overflow-y: auto;
+    z-index: 1000; /* Ensure sidebar is above other content */
+}
+
+nav.vertical-nav ul {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+}
+
+nav.vertical-nav ul li {
+    border-bottom: 1px solid #ddd;
+}
+
+nav.vertical-nav ul li a {
+    color: white;
+    text-decoration: none;
+    display: flex;
+    align-items: center;
+    padding: 10px;
+}
+
+nav.vertical-nav ul li a i {
+    margin-right: 10px;
+}
+
+nav.vertical-nav ul li a:hover {
+    background-color: #575757;
+}
+
+main {
+    margin-left: 200px; /* Space for the fixed sidebar */
+    margin-top: 60px; /* Space for the fixed header */
+    padding: 20px;
+    flex: 1;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    flex-direction: column;
+    overflow-y: auto; /* Allows scrolling if content exceeds viewport height */
+}
+
+main section {
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    padding: 10px;
+    margin-bottom: 20px;
+    box-shadow: 2px 2px 5px rgba(0,0,0,0.1);
+    flex: 1 1 60%;
+}
+
+main section.search form {
+    display: flex;
+    align-items: center;
+    width: 100%;
+    max-width: 400px;
+}
+
+main section.search input[type="text"] {
+    width: 80%;
+    padding: 10px;
+    border: 1px solid #ddd;
+    border-radius: 5px 0 0 5px;
+    outline: none;
+}
+
+main section.search button {
+    width: 20%;
+    padding: 10px;
+    border: 1px solid #ddd;
+    border-left: none;
+    border-radius: 0 5px 5px 0;
+    background-color: #4CAF50;
+    color: white;
+    cursor: pointer;
+}
+
+main section.search button:hover {
+    background-color: #45a049;
+}
+
+main aside.calendar-events {
+    flex: 1 1 35%;
+    display: flex;
+    flex-direction: column;
+}
+
+.calendar, .events {
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    padding: 10px;
+    margin-bottom: 20px;
+    box-shadow: 2px 2px 5px rgba(0,0,0,0.1);
+}
+
+.assignments {
+    display: flex;
+    flex-direction: column;
+    flex: 2;
+}
+
+.assignment {
+    display: flex;
+    justify-content: space-between;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    padding: 10px;
+    margin-bottom: 10px;
+    box-shadow: 2px 2px 5px rgba(0,0,0,0.1);
+}
+
+.assignment-info {
+    display: flex;
+    flex-direction: column;
+}
+
+.assignment-info .title {
+    font-size: 1.2em;
+}
+
+.assignment-info .description {
+    margin: 0; /* Remove margin to eliminate gap */
+}
+
+.assignment-details {
+    display: flex;
+    flex-direction: column;
+    margin-left: 20px;
+}
+
+.due-date, .status {
+    margin: 0; /* Remove margin to eliminate gap */
+    padding: 0; /* Remove padding to eliminate gap */
+}
+
+.assignment-actions {
+    display: inline-block;
+    align-items: center;
+    margin-left: auto;
+}
+
+.view-details {
+    color: #4CAF50;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+.view-details:hover {
+    text-decoration: underline;
+}
+
+footer {
+    background-color: #333;
+    color: white;
+    text-align: center;
+    padding: 10px;
+    position: relative; /* Ensures footer is at the bottom of the viewport or page content */
+}
